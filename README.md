@@ -102,9 +102,9 @@ yvC1QJC9TjyqSUwLMIdpYA,192.168.1.3
 
 ### Example Subnet Output
 
-'''bash
+```bash
 Inclusive subnet for IPs 192.168.1.1 and 192.168.1.100 is: 192.168.1.0/25
-'''
+```
 
 ## Contributing
 
@@ -112,17 +112,17 @@ Contributions are welcome! To contribute:
 
 1. Fork the repository.
 2. Create a new branch:
-   '''bash
+   ```bash
    git checkout -b feature-name
-   '''
+   ```
 3. Commit your changes:
-   '''bash
+   ```bash
    git commit -m "Add feature-name"
-   '''
+   ```
 4. Push to your branch:
-   '''bash
+   ```bash
    git push origin feature-name
-   '''
+   ```
 5. Open a pull request.
 
 ## License
