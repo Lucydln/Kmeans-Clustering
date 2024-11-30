@@ -63,5 +63,72 @@ IPv4 address analysis is crucial for network monitoring, anomaly detection, and 
 2. Run the script:
    ```bash
    python ip_kmeans_new.py
+   ```
+
+## Follow the Prompts
+
+Follow the prompts to determine the number of clusters using the Elbow Method or specify a value directly.
+
+### View Output:
+
+- Cluster assignments.
+- Scatter plots of PCA-reduced dimensions with annotated IPs and cluster centers.
+
+## Subnet Calculation
+
+Use the `IP_pattern.py` script to calculate an inclusive subnet for two IP addresses:
+```python
+from IP_pattern import calc_inclusive_subnet
+
+subnet = calc_inclusive_subnet('192.168.1.1', '192.168.1.100')
+print(f"The inclusive subnet is: {subnet}")
+```
+
+## Examples
+
+### Example Input
+
+**CSV File (`ip_for_top_acct.csv`):**
+```csv
+account_id,xrealip
+yvC1QJC9TjyqSUwLMIdpYA,192.168.1.1
+yvC1QJC9TjyqSUwLMIdpYA,192.168.1.2
+yvC1QJC9TjyqSUwLMIdpYA,192.168.1.3
+```
+### Example Clustering Visualization
+
+- A scatter plot with clusters labeled and IPs annotated in PCA-reduced dimensions.
+- Cluster centers highlighted for easy identification.
+
+### Example Subnet Output
+
+'''bash
+Inclusive subnet for IPs 192.168.1.1 and 192.168.1.100 is: 192.168.1.0/25
+'''
+
+## Contributing
+
+Contributions are welcome! To contribute:
+
+1. Fork the repository.
+2. Create a new branch:
+   '''bash
+   git checkout -b feature-name
+   '''
+3. Commit your changes:
+   '''bash
+   git commit -m "Add feature-name"
+   '''
+4. Push to your branch:
+   '''bash
+   git push origin feature-name
+   '''
+5. Open a pull request.
+
+## License
+
+This repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+
 
    
