@@ -44,3 +44,24 @@ IPv4 address analysis is crucial for network monitoring, anomaly detection, and 
    ```bash
    git clone https://github.com/Lucydln/Kmeans-Clustering.git
    cd Kmeans-Clustering
+   ```
+2. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+## Usage
+
+### Scripts Overview
+
+- **`ip_kmeans_new.py`**: Main script for applying K-Means clustering to IPv4 addresses and visualizing results.
+- **`IP_pattern.py`**: Contains utilities for subnet calculation and IP range analysis.
+- **`test.py`**: Example usage of the clustering script.
+
+### Running K-Means Clustering
+
+1. Modify the `df_file` variable in `ip_kmeans_new.py` to point to your dataset (e.g., `ip_for_top_acct.csv`).
+2. Run the script:
+   ```bash
+   python ip_kmeans_new.py
+
+   
